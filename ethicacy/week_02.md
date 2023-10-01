@@ -1,6 +1,6 @@
 # Is safeguarding privacy the responsibility of the consumer or company?
 
-I hold thath the company has an ethical responsibility to safeguard consumer privacy.
+I hold that the company has an ethical responsibility to safeguard consumer privacy.
 
 ## supporting arguments
 
