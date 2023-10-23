@@ -1,3 +1,6 @@
+# binary-search
+# Andy Mina
+# CSCI 77800 Fall 2023
 import random
 
 def binarySearch(lst, left, right, target):

@@ -1,7 +1,16 @@
+# playing card
+# Andy Mina
+# CSCI 77800 Fall 2023
 class PlayingCard:
   def __init__(self, value: str, suit: str):
     self.value = value
     self.suit = suit
+    self.symbolMap = {
+      'spade': '♠',
+      'heart': '♥',
+      'club': '♣',
+      'diamond': '◆'
+    }
 
   def getValue(self):
     return self.value
@@ -16,7 +25,7 @@ class PlayingCard:
     self.suit = suit
 
   def print_val(self):
-    print(f'This card is the {self.value} of {self.suit}s')
+    print(f'This card is the {self.value} of {self.symbolMap[self.suit]}s')
 
   def __add__(self, other):
     return self.getValue() + other.getValue() 
@@ -28,7 +37,10 @@ class PlayingCard:
     return self.getValue() > other.getValue()
 
   def __eq__(self, other):
-    return self.getValue() == other.getValue() and self.getSuit() == other.getSuit()
+    return self.getValue() == other.getValue()
 
   def __str__(self):
-    self.print_val()
+    return f'This card is the {self.value} of {self.symbolMap[self.suit]}s'
+
+  def __hash__(self):
+    return hash((self.value, self.suit))

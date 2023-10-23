@@ -1,3 +1,6 @@
+# GOL
+# Andy Mina
+# CSCI 77800 Fall 2023
 ALIVE_CHAR = 'X'
 DEAD_CHAR = ' '
 ROWS = 10
